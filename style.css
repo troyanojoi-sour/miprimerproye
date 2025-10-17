@@ -1,0 +1,125 @@
+/*   Codigo del Reset     */
+
+      * {margin: 0;
+         padding: 0;}
+      
+      ul {list-style: none;
+          margin-left: 0;}
+
+      a {text-decoration: none;
+         color: #210303;}
+
+
+
+     /*   Codigo de la Pagina*/
+
+    header, nav, main,footer  {width: 80%;
+                margin: 0 auto;}
+
+
+    header { 
+             min-height: 8rem;
+             background-color:green;
+            }
+         /* Menu de navegacion*/
+    nav     {
+            min-height: 6rem;
+            background-color: orange;
+            }
+
+     nav ul {background-color: aqua;
+             min-height: 6rem;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;}
+
+     nav ul li {
+               /*background-color: rgb(103, 123, 83); */
+               height: 2.3rem;
+               /*border: 0.2rem solid black; */
+               margin: 0.3rem;
+               width: 7rem;
+               }
+
+     nav ul li a  {color: aliceblue;
+                   background-color: blueviolet;
+                   display: block;
+                   height: 2.3rem;
+                   text-align: center;
+                   font-family:Verdana, Geneva, Tahoma, sans-serif;
+                   font-size: 1.2rem;
+                   font-weight: 800;
+                   font-style: italic;
+                   border-radius: 0.4rem;
+
+                }
+     nav ul li a:hover {
+                   color:blueviolet;
+                   background-color: aliceblue;
+                   transition: 1s;
+     }
+
+
+    /*   Contenido del sitio */
+
+
+    main {min-height: 20rem;
+            background-color: lightblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            
+          }
+    
+    main img {width: 32%;
+              margin-top: 0.3rem;}
+
+    main div {border: 0.3rem solid black;
+              width: 30%;}     
+
+        .izda {background-color: aqua;}
+        .dcha {background-color: chartreuse;}
+
+
+    footer {min-height: 7rem;
+            background-color: darkorange;}
+
+         /*  Media Queries          */
+
+            @media screen and (max-width: 650px) {
+  body {
+    background-color: lightgreen;
+  }
+
+       nav ul {flex-direction: column;}
+       nav ul li {width: 20rem;}
+
+
+          main { flex-direction: row;
+                 align-items: center;}
+
+        /*  main div {width: 40%;} */
+
+        main img {width: 40%;}
+
+
+
+}
+
+ @media screen and (max-width: 423px) {
+
+ body {
+    background-color: red;
+  }
+
+     header {display: none;}
+
+           nav ul li {width: 95%;}
+  /* main div {flex-direction: column;
+             width: 95%;}  */
+
+    main img {flex-direction: column;
+              width: 95%;}
+
+
+ }
